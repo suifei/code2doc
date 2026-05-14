@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" role="img" aria-label="code2doc skill — SDLC document coverage map">
+<title>code2doc — SDLC Document Coverage Map</title>
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    .bg   { fill: #1a1a1a; }
+    .card { fill: #242424; stroke: #333; }
+    .txt  { fill: #e0ddd4; }
+    .muted{ fill: #888780; }
+    .div  { stroke: #333; }
+    .leg-bg { fill: #242424; stroke: #444; }
+  }
+  @media (prefers-color-scheme: light) {
+    .bg   { fill: #fafaf8; }
+    .card { fill: #ffffff; stroke: #e0ddd4; }
+    .txt  { fill: #1a1a18; }
+    .muted{ fill: #888780; }
+    .div  { stroke: #e8e6de; }
+    .leg-bg { fill: #ffffff; stroke: #e0ddd4; }
+  }
+  text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+  .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; }
+  .phase { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; }
+  .title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 600; }
+  .sub   { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; }
+
+  /* covered */
+  .c-green { fill: #e9f5de; stroke: #639922; }
+  .c-green text { fill: #27500a; }
+  @media (prefers-color-scheme: dark) {
+    .c-green { fill: #1d3810; stroke: #639922; }
+    .c-green text { fill: #97c459; }
+  }
+
+  /* partial */
+  .c-amber { fill: #faeeda; stroke: #ba7517; }
+  .c-amber text { fill: #633806; }
+  @media (prefers-color-scheme: dark) {
+    .c-amber { fill: #3a2800; stroke: #ba7517; }
+    .c-amber text { fill: #fac775; }
+  }
+
+  /* missing */
+  .c-red { fill: #fceaea; stroke: #e24b4a; }
+  .c-red text { fill: #791f1f; }
+  @media (prefers-color-scheme: dark) {
+    .c-red { fill: #2e1010; stroke: #e24b4a; }
+    .c-red text { fill: #f09595; }
+  }
+
+  /* frontier */
+  .c-purple { fill: #eeedfe; stroke: #7f77dd; }
+  .c-purple text { fill: #3c3489; }
+  @media (prefers-color-scheme: dark) {
+    .c-purple { fill: #1c1a38; stroke: #7f77dd; }
+    .c-purple text { fill: #afa9ec; }
+  }
+
+  .phase-col { fill: #f1efe8; }
+  @media (prefers-color-scheme: dark) { .phase-col { fill: #242424; } }
+</style>
+
+<!-- Background -->
+<rect class="bg" width="900" height="540" rx="12"/>
+
+<!-- Title bar -->
+<text class="title txt" x="28" y="36">code2doc</text>
+<text class="sub muted" x="28" y="54">SDLC Document Coverage · From Code to Docs, Automatically</text>
+
+<!-- Legend -->
+<rect class="leg-bg" x="540" y="20" width="332" height="42" rx="6" stroke-width="0.5"/>
+<rect class="c-green" x="556" y="33" width="12" height="12" rx="2" stroke-width="0.5"/>
+<text class="sub muted" x="574" y="43">Covered</text>
+<rect class="c-amber" x="638" y="33" width="12" height="12" rx="2" stroke-width="0.5"/>
+<text class="sub muted" x="656" y="43">Partial</text>
+<rect class="c-red" x="712" y="33" width="12" height="12" rx="2" stroke-width="0.5"/>
+<text class="sub muted" x="730" y="43">Missing</text>
+<rect class="c-purple" x="786" y="33" width="12" height="12" rx="2" stroke-width="0.5"/>
+<text class="sub muted" x="804" y="43">Frontier</text>
+
+<!-- Divider -->
+<line class="div" x1="20" y1="68" x2="880" y2="68" stroke-width="0.5"/>
+
+<!-- Phase column background -->
+<rect class="phase-col" x="20" y="69" width="72" height="460" rx="0"/>
+<line class="div" x1="92" y1="68" x2="92" y2="530" stroke-width="0.5"/>
+
+<!-- Row heights: each row ~66px, starting at y=78 -->
+
+<!-- ── ROW 1: Initiation ── -->
+<line class="div" x1="20" y1="134" x2="880" y2="134" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="105" text-anchor="middle">Initiation</text>
+<!-- BRD/MRD: covered -->
+<g class="c-green">
+  <rect x="104" y="82" width="120" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="164" y="107" text-anchor="middle">BRD / MRD</text>
+</g>
+<!-- Investment Brief: missing -->
+<g class="c-red">
+  <rect x="234" y="82" width="128" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="298" y="107" text-anchor="middle">Investment Brief</text>
+</g>
+<!-- User Journey Map: frontier -->
+<g class="c-purple">
+  <rect x="372" y="82" width="138" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="441" y="107" text-anchor="middle">User Journey Map</text>
+</g>
+
+<!-- ── ROW 2: Requirements ── -->
+<line class="div" x1="20" y1="200" x2="880" y2="200" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="171" text-anchor="middle">Requirements</text>
+<!-- PRD: covered -->
+<g class="c-green">
+  <rect x="104" y="148" width="80" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="144" y="173" text-anchor="middle">PRD</text>
+</g>
+<!-- SRS: partial -->
+<g class="c-amber">
+  <rect x="194" y="148" width="80" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="234" y="173" text-anchor="middle">SRS</text>
+</g>
+<!-- Compliance Map: missing -->
+<g class="c-red">
+  <rect x="284" y="148" width="130" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="349" y="173" text-anchor="middle">Compliance Map</text>
+</g>
+<!-- User Story → Code trace: frontier -->
+<g class="c-purple">
+  <rect x="424" y="148" width="170" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="509" y="173" text-anchor="middle">User Story ↔ Code Trace</text>
+</g>
+
+<!-- ── ROW 3: Architecture ── -->
+<line class="div" x1="20" y1="266" x2="880" y2="266" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="237" text-anchor="middle">Architecture</text>
+<!-- HLD: covered -->
+<g class="c-green">
+  <rect x="104" y="214" width="68" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="138" y="239" text-anchor="middle">HLD</text>
+</g>
+<!-- DDD: covered -->
+<g class="c-green">
+  <rect x="182" y="214" width="68" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="216" y="239" text-anchor="middle">DDD</text>
+</g>
+<!-- ADR: partial -->
+<g class="c-amber">
+  <rect x="260" y="214" width="68" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="294" y="239" text-anchor="middle">ADR</text>
+</g>
+<!-- arc42: missing -->
+<g class="c-red">
+  <rect x="338" y="214" width="68" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="372" y="239" text-anchor="middle">arc42</text>
+</g>
+<!-- C4 Model: missing -->
+<g class="c-red">
+  <rect x="416" y="214" width="90" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="461" y="239" text-anchor="middle">C4 Model</text>
+</g>
+<!-- CIAO / CodeWiki: frontier -->
+<g class="c-purple">
+  <rect x="516" y="214" width="120" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="576" y="239" text-anchor="middle">CIAO / CodeWiki</text>
+</g>
+
+<!-- ── ROW 4: Implementation ── -->
+<line class="div" x1="20" y1="332" x2="880" y2="332" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="303" text-anchor="middle">Implementation</text>
+<!-- LLD: covered -->
+<g class="c-green">
+  <rect x="104" y="280" width="68" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="138" y="305" text-anchor="middle">LLD</text>
+</g>
+<!-- Coding Guide: covered -->
+<g class="c-green">
+  <rect x="182" y="280" width="100" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="232" y="305" text-anchor="middle">Coding Guide</text>
+</g>
+<!-- OpenAPI: partial -->
+<g class="c-amber">
+  <rect x="292" y="280" width="90" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="337" y="305" text-anchor="middle">OpenAPI</text>
+</g>
+<!-- Data Dict: missing -->
+<g class="c-red">
+  <rect x="392" y="280" width="96" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="440" y="305" text-anchor="middle">Data Dict.</text>
+</g>
+<!-- Threat Model: missing -->
+<g class="c-red">
+  <rect x="498" y="280" width="108" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="552" y="305" text-anchor="middle">Threat Model</text>
+</g>
+<!-- Onboard Guide: frontier -->
+<g class="c-purple">
+  <rect x="616" y="280" width="116" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="674" y="305" text-anchor="middle">Onboard Guide</text>
+</g>
+
+<!-- ── ROW 5: Verification ── -->
+<line class="div" x1="20" y1="398" x2="880" y2="398" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="369" text-anchor="middle">Verification</text>
+<!-- BDD/SIT/E2E/UAT: covered -->
+<g class="c-green">
+  <rect x="104" y="346" width="170" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="189" y="371" text-anchor="middle">BDD / SIT / E2E / UAT</text>
+</g>
+<!-- Mutation Test: missing -->
+<g class="c-red">
+  <rect x="284" y="346" width="138" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="353" y="371" text-anchor="middle">Mutation Test Report</text>
+</g>
+<!-- Property-based: frontier -->
+<g class="c-purple">
+  <rect x="432" y="346" width="130" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="497" y="371" text-anchor="middle">Property-based Test</text>
+</g>
+
+<!-- ── ROW 6: Operations ── -->
+<line class="div" x1="20" y1="464" x2="880" y2="464" stroke-width="0.5"/>
+<text class="phase muted" x="56" y="435" text-anchor="middle">Operations</text>
+<!-- Ops Manual: covered -->
+<g class="c-green">
+  <rect x="104" y="412" width="100" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="154" y="437" text-anchor="middle">Ops Manual</text>
+</g>
+<!-- SLI/SLO: covered -->
+<g class="c-green">
+  <rect x="214" y="412" width="90" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="259" y="437" text-anchor="middle">SLI / SLO</text>
+</g>
+<!-- Admin Manual: covered -->
+<g class="c-green">
+  <rect x="314" y="412" width="110" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="369" y="437" text-anchor="middle">Admin Manual</text>
+</g>
+<!-- Runbook: missing -->
+<g class="c-red">
+  <rect x="434" y="412" width="80" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="474" y="437" text-anchor="middle">Runbook</text>
+</g>
+<!-- Cost/Capacity: frontier -->
+<g class="c-purple">
+  <rect x="524" y="412" width="130" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="589" y="437" text-anchor="middle">Cost / Capacity Plan</text>
+</g>
+
+<!-- ── ROW 7: Release ── -->
+<text class="phase muted" x="56" y="501" text-anchor="middle">Release</text>
+<!-- CI/CD: covered -->
+<g class="c-green">
+  <rect x="104" y="478" width="90" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="149" y="503" text-anchor="middle">CI/CD Docs</text>
+</g>
+<!-- Release Notes: missing -->
+<g class="c-red">
+  <rect x="204" y="478" width="108" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="258" y="503" text-anchor="middle">Release Notes</text>
+</g>
+<!-- Migration Guide: missing -->
+<g class="c-red">
+  <rect x="322" y="478" width="118" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="381" y="503" text-anchor="middle">Migration Guide</text>
+</g>
+<!-- Changelog auto-gen: frontier -->
+<g class="c-purple">
+  <rect x="450" y="478" width="140" height="40" rx="6" stroke-width="0.5"/>
+  <text class="label" x="520" y="503" text-anchor="middle">Changelog Auto-gen</text>
+</g>
+
+<!-- Bottom border -->
+<line class="div" x1="20" y1="529" x2="880" y2="529" stroke-width="0.5"/>
+<text class="sub muted" x="900" y="539" text-anchor="end">github.com/suifei/code2doc</text>
+</svg>
