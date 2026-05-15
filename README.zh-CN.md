@@ -2,6 +2,10 @@
 
 <div align="center">
 
+ClawHub: [https://clawhub.ai/suifei/code-to-doc-generator](https://clawhub.ai/suifei/code-to-doc-generator)
+
+Skillhub:[https://skillhub.cn/skills/code-to-doc-generator](https://skillhub.cn/skills/code-to-doc-generator)
+
 # 🔍 code2doc
 
 **从代码逆向提取业务逻辑，生成覆盖软件交付全链路的专业文档**
