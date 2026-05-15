@@ -10,6 +10,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blue)](https://docs.anthropic.com/claude-code)
 [![OpenCode](https://img.shields.io/badge/OpenCode-Compatible-purple)](https://opencode.ai)
 [![Cursor](https://img.shields.io/badge/Cursor-Rules-orange)](https://cursor.sh)
+[![ClawHub](https://clawhub.ai/favicon.ico)](https://clawhub.ai/suifei/lang-migration)
 
 *Documentation drift is entropy, not negligence. Code has CI/lint/compiler errors as feedback loops — documentation has none, so it inevitably rots.*
 *code2doc is the solution: treat code as the single source of truth, and continuously generate or calibrate documentation.*
@@ -17,6 +18,10 @@
 </div>
 
 ---
+
+ClawHub: [https://clawhub.ai/suifei/code-to-doc-generator](https://clawhub.ai/suifei/code-to-doc-generator)
+
+Skillhub:[https://skillhub.cn/skills/code-to-doc-generator](https://skillhub.cn/skills/code-to-doc-generator)
 
 ## Coverage
 
